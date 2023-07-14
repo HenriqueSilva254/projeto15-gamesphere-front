@@ -11,7 +11,7 @@ function GamesHighlight() {
       {/* <ArrowContainer>
         <StyledIcon icon="material-symbols:arrow-back-ios" />
       </ArrowContainer> */}
-      <StyledCarousel>
+      <StyledCarousel showIndicators={true} showArrows={true} width="1200px">
         <GamesHightlightBox>Um Jogo</GamesHightlightBox>
         <GamesHightlightBox>Um Jogo</GamesHightlightBox>
       </StyledCarousel>
@@ -61,7 +61,5 @@ const StyledCarousel = styled(Carousel)`
   display: flex;
   align-items: center;
   justify-content: center;
-  :hover {
-    color: #f38405;
-  }
+  
 `;

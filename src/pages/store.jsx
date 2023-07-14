@@ -90,7 +90,7 @@ const GameListFilterContainer = styled.div`
   background-color: #d9d9d9;
 
   h2 {
-    font-size: 22px;
+    font-size: 18px;
     color: orange;
   }
 `;
