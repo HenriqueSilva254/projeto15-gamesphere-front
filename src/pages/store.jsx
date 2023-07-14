@@ -4,7 +4,6 @@ import Nav from "../components/nav";
 import GameListItem from "../components/GameListItem";
 import GamesHighlight from "../components/GamesHighlight";
 import { Icon } from "@iconify/react";
-
 function StorePage() {
   return (
     <StorePageBody>
