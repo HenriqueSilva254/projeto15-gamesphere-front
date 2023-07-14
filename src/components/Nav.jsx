@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 
 function Nav() {
+  const [menu, setMenu] = useState(<StyledIcon icon="ci:hamburger" />)
   return (
     <NavContainer>
       <NavLeft>
-
-        <StyledIcon icon="ci:hamburger" />
+        <div>{menu}</div>
       </NavLeft>
       <NavRight>
         <StyledIcon icon="material-symbols:shopping-cart" />
@@ -20,7 +20,7 @@ function Nav() {
 export default Nav;
 
 const NavContainer = styled.div`
-  width: 1200px;
+   width: 100%;
   height: 50px;
   z-index: 10;
 

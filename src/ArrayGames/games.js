@@ -14,7 +14,7 @@ const Jogos =
         title: "Grand Theft Auto V",
         image: "https://cdn.l0n.news/wp-content/uploads/2023/04/GTA-5-26.jpg",
         description: "O Grand Theft Auto V: Edição Premium inclui o Modo História completo do Grand Theft Auto V, Grand Theft Auto Online e todo o conteúdo e melhorias de jogo já lançados. Você também recebe o Kit Inicial de Esquema Criminal, a maneira mais rápida de começar seu império do crime no Grand Theft Auto Online.",
-        category: "Ação , aventura",
+        category: "Ação, aventura",
         price: "89,90",
         background: "https://t2.tudocdn.net/614166?w=1920",
         esrb: 16
@@ -79,6 +79,6 @@ const Jogos =
         background: "https://t2.tudocdn.net/635456?w=1920",
         esrb: 16
     }
-    ]
+    ] 
 
     export default Jogos
