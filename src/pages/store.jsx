@@ -4,26 +4,29 @@ import Nav from "../components/nav.jsx";
 import GameListItem from "../components/GameListItem";
 import GamesHighlight from "../components/GamesHighlight";
 import { Icon } from "@iconify/react";
+import Jogos from "../ArrayGames/games.js";
 
 function StorePage() {
+  const Category = ["Ação","Terror","Tiro","Corrida","Aventura","RPG","Plataforma"]
   return (
     <StorePageBody>
       <StorePageBlur />
       <Nav />
       <StorePageContainer>
         <StorePageContent>
-          <GamesHighlight />
+          <GamesHighlight imageGame1={Jogos[0].image} imageGame2={Jogos[1].image}/>
 
           <GameListContainer>
             <GameListFilterContainer>
               <h2>Category</h2>
-              Genero Genero Genero Genero Genero Genero Genero
+              {Category.map(c => (
+                <a href="">{c}</a>
+              ))}
             </GameListFilterContainer>
             <GameList>
-              {/* MAP DOS JOGOS para componentes GameListItem */}
-              <GameListItem />
-              <GameListItem />
-              <GameListItem />
+              {Jogos.map(game => (
+                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category} />
+              ))}
             </GameList>
           </GameListContainer>
         </StorePageContent>

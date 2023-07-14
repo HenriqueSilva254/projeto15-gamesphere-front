@@ -5,15 +5,21 @@ import Slider from "react-slick";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-function GamesHighlight() {
+function GamesHighlight(props) {
   return (
     <GamesHightlightContainer>
       {/* <ArrowContainer>
         <StyledIcon icon="material-symbols:arrow-back-ios" />
       </ArrowContainer> */}
       <StyledCarousel showIndicators={true} showArrows={true} width="1200px">
-        <GamesHightlightBox>Um Jogo</GamesHightlightBox>
-        <GamesHightlightBox>Um Jogo</GamesHightlightBox>
+        <GamesHightlightBox>
+          <img src={props.imageGame1} alt="" />
+        </GamesHightlightBox>
+
+        <GamesHightlightBox>
+          <img src={props.imageGame2} alt="" />
+        </GamesHightlightBox>
+
       </StyledCarousel>
       {/* <ArrowContainer>
         <StyledIcon icon="material-symbols:arrow-forward-ios" />

@@ -1,9 +1,20 @@
 import React from 'react'
 import { styled } from 'styled-components'
 
-function GameListItem() {
+function GameListItem(props) {
+
   return (
-    <GameItemContainer></GameItemContainer>
+    <GameItemContainer>
+      <img src={props.image} alt="" />
+      <InfoGamesContainer>
+        <Title>
+          <p>{props.title}</p>
+          <a>{props.category}</a>
+        </Title>
+
+        <p>{props.price}</p>
+      </InfoGamesContainer>
+    </GameItemContainer>
   )
 }
 
@@ -19,4 +30,22 @@ const GameItemContainer = styled.div`
   align-items: center;
 
   background-color: #d9d9d9;
+  img{
+    width: 189px;
+    height: 100%;
+  }
+`
+const InfoGamesContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+`
+const Price = styled.div`
+  
+`
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
 `
