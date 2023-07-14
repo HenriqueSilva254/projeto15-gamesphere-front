@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
     body{
+        height: 100%;
+        width: 100%;
         overflow-x: hidden;
         margin: 0;
         padding: 0;
@@ -36,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     input {
         font-size: 20px;
         width: calc(100% - 850px);
+        min-width: 600px;
         border-radius: 5px;
         outline: none;
         border: none;

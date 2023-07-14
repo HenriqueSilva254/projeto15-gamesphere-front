@@ -3,13 +3,15 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { styled } from "styled-components";
 
+axios.defaults.baseURL = `${import.meta.env.VITE_API_URL}`;
 
 export default function SignUpPage() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirm, setPasswordConfirm] = useState("");
-    const [age, setAge] = useState("")
+    const [age, setAge] = useState("");
+
     const navigate = useNavigate()
 
     function HeadSignUp(e) {
@@ -22,7 +24,7 @@ export default function SignUpPage() {
         }
         if (password !== passwordConfirm) alert("senhas não conferem")
         else {
-            const promisse = axios.post(`${process.env.VITE_API_URL}/sign-up`, body)
+            const promise = axios.post("/sign-up", body)
                 .then(res => {
                     console.log(res.data)
                 })

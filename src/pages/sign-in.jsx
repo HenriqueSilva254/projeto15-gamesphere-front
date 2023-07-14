@@ -1,7 +1,9 @@
 import styled from "styled-components"
+import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
+axios.defaults.baseURL = `${import.meta.env.VITE_API_URL}`;
 
 export default function SignInPage() {
 
@@ -14,7 +16,7 @@ export default function SignInPage() {
     e.preventDefault()
 
     const body = { email, password }
-    const promisse = axios.post(`${process.env.VITE_API_URL}/sign-in`, body )
+    const promise = axios.post("/sign-in", body )
     .then(res => {
         console.log(res.data)
         navigate("/home")
