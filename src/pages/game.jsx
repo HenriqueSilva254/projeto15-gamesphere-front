@@ -23,10 +23,17 @@ function StorePage() {
                             <img src={Jogos[3].background} alt="" />
                             <h1> {Jogos[3].title} </h1>
                             <p> {Jogos[3].description} </p>
+                            <a href="">{Jogos[3].category}</a>
                         </GameImage>
                         <Comprar>
-                            <p>Adicionar ao carrinho</p>
+                            <p>Adicione ao carrinho por: {Jogos[3].price}</p>
                         </Comprar>
+
+                        <GameList>
+                            {Jogos.map(game => (
+                                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category} />
+                            ))}
+                        </GameList>
                     </GameDescription>
                 </StorePageContent>
             </StorePageContainer>
@@ -38,8 +45,11 @@ export default StorePage;
 const Comprar = styled.div`
     background-color: #3e372bac;
     height: 50px;
+    margin-top: 20px;
     p{
-        margin: 20px;
+        font-size: 30px;
+        padding: 10px 0px 10px 20px;
+        
     }
 `
 const GameImage = styled.div`
@@ -52,7 +62,7 @@ const GameImage = styled.div`
     h1{
         margin: 20px;
     }
-    p{  
+    a, p{  
         margin: 20px;
         font-size: 20px;
     }
@@ -60,7 +70,7 @@ const GameImage = styled.div`
 const GameDescription = styled.div`
     background-color: #d9d9d9ac;
     width: 100%;
-    height: 1000px;
+    height: 953px;
 `
 const StorePageContainer = styled.div`
   height: 100%;
@@ -92,10 +102,14 @@ const StorePageBody = styled.section`
 
 
 const GameList = styled.div`
-  width: 90%;
+  width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
+  div{
+    margin: 8px 0px 0px 0px;
+  }
 `;
 
 const GameListFilterContainer = styled.div`
