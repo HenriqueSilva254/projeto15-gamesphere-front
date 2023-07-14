@@ -70,36 +70,37 @@ const SingInContainer = styled.section`
     input {
     font-size: 20px;
     width: calc(100% - 850px);
+    min-width: 400px;
     border-radius: 5px;
     outline: none;
     border: none;
     ::placeholder {
-        color: white; 
+      color: white; 
     }
     padding: 15px;
     margin: 1px;
     background-color: #D9D9D9;
     :focus {
-        border: 2px solid #ffb6b6;
-        margin: 0px;
+      border: 2px solid #ffb6b6;
+      margin: 0px;
     }
-    }
-
-    h1 {
-            font-weight: 700;
-            font-size: 64px;
-            color: #F0A24B;
-            top: 80px;
-            position: absolute;
-        }
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 90%;
-        border-radius: 5px;
-        margin-top: 350px;
-    }
-`
+  }
+  
+  h1 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #F0A24B;
+    top: 80px;
+    position: absolute;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 350px;
+  }
+  `

@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 64px;
         color: #F0A24B;
     }
-    input {
+    /* input {
         font-size: 20px;
         width: calc(100% - 850px);
         min-width: 600px;
@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
             border: 2px solid #ffb6b6;
             margin: 0px;
         }
-    }
+    } */
     form {
         display: flex;
         flex-direction: column;

@@ -2,19 +2,22 @@ import React from "react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 import Slider from "react-slick";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function GamesHighlight() {
   return (
     <GamesHightlightContainer>
-      <ArrowContainer>
+      {/* <ArrowContainer>
         <StyledIcon icon="material-symbols:arrow-back-ios" />
-      </ArrowContainer>
-      <GamesHightlightBox>
-        <GamesHightlightBoxTitle>Um Jogo</GamesHightlightBoxTitle>
-      </GamesHightlightBox>
-      <ArrowContainer>
+      </ArrowContainer> */}
+      <StyledCarousel>
+        <GamesHightlightBox>Um Jogo</GamesHightlightBox>
+        <GamesHightlightBox>Um Jogo</GamesHightlightBox>
+      </StyledCarousel>
+      {/* <ArrowContainer>
         <StyledIcon icon="material-symbols:arrow-forward-ios" />
-      </ArrowContainer>
+      </ArrowContainer> */}
     </GamesHightlightContainer>
   );
 }
@@ -22,7 +25,7 @@ function GamesHighlight() {
 export default GamesHighlight;
 
 const GamesHightlightContainer = styled.div`
-  width: 100%;
+  width: 500px;
   height: fit-content;
   margin-top: 60px;
 
@@ -50,6 +53,11 @@ const StyledIcon = styled(Icon)`
 `;
 
 const ArrowContainer = styled.div`
+  :hover {
+    color: #f38405;
+  }
+`;
+const StyledCarousel = styled(Carousel)`
   display: flex;
   align-items: center;
   justify-content: center;
