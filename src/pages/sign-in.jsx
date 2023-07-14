@@ -62,11 +62,6 @@ const SingInContainer = styled.section`
   overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-image: url('https://cdn.discordapp.com/attachments/1129133285423980654/1129138765651267855/9b5719d2-481e-410a-bfb6-886d32ad2aea.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;

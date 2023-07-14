@@ -7,11 +7,11 @@ function Nav() {
     <NavContainer>
       <NavLeft>
 
-        <Icon icon="ci:hamburger" />
+        <StyledIcon icon="ci:hamburger" />
       </NavLeft>
       <NavRight>
-        <Icon icon="material-symbols:shopping-cart" />
-        <Icon icon="material-symbols:account-circle" />
+        <StyledIcon icon="material-symbols:shopping-cart" />
+        <StyledIcon icon="material-symbols:account-circle" />
       </NavRight>
     </NavContainer>
   );
@@ -20,28 +20,38 @@ function Nav() {
 export default Nav;
 
 const NavContainer = styled.div`
-  width: 100%;
+  width: 1200px;
   height: 50px;
+  z-index: 10;
 
-  background-color: #646464;
+  background-color: #D9D9D9;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+  top: 0;
   filter: drop-shadow(0px 0px 10px #000000a6);
 `;
 
-
+const StyledIcon = styled(Icon)`
+    font-size: 30px;
+    color: #F0A24B;
+    :hover {
+        color: #f38405;
+    }
+`
 
 const NavLeft = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  margin-left: 16px;
   `;
 const NavRight = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
-`;
+  margin-right: 16px;
+  `;

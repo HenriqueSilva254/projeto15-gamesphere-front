@@ -12,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        ::-webkit-scrollbar{
+        display: none;
+      }
     }
     * {
         font-family: 'Rubik Mono One', sans-serif;
