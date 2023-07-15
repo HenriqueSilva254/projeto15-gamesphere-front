@@ -5,27 +5,31 @@ import GameListItem from "../components/GameListItem";
 import GamesHighlight from "../components/GamesHighlight";
 import { Icon } from "@iconify/react";
 import Jogos from "../ArrayGames/games.js";
+import GameFilterMenu from "../components/GameFilterMenu.jsx";
 
 function StorePage() {
-  const Category = ["Ação","Terror","Tiro","Corrida","Aventura","RPG","Plataforma"]
   return (
     <StorePageBody>
       <StorePageBlur />
       <Nav />
       <StorePageContainer>
         <StorePageContent>
-          <GamesHighlight imageGame1={Jogos[0].image} imageGame2={Jogos[1].image}/>
+          <GamesHighlight
+            imageGame1={Jogos[0].image}
+            imageGame2={Jogos[1].image}
+          />
 
           <GameListContainer>
-            <GameListFilterContainer>
-              <h2>Category</h2>
-              {Category.map(c => (
-                <a href="">{c}</a>
-              ))}
-            </GameListFilterContainer>
+            <GameFilterMenu />
             <GameList>
-              {Jogos.map(game => (
-                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category.join(", ")} />
+              {Jogos.map((game) => (
+                <GameListItem
+                  key={game.title}
+                  image={game.image}
+                  price={game.price}
+                  title={game.title}
+                  category={game.category.join(", ")}
+                />
               ))}
             </GameList>
           </GameListContainer>
@@ -80,22 +84,6 @@ const GameList = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
-`;
-
-const GameListFilterContainer = styled.div`
-  width: 150px;
-  height: fit-content;
-  padding: 12px 6px;
-  line-height: 1.2;
-  display: flex;
-  flex-direction: column;
-
-  background-color: #d9d9d9;
-
-  h2 {
-    font-size: 18px;
-    color: orange;
-  }
 `;
 
 const StorePageBlur = styled.div`

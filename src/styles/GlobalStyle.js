@@ -47,6 +47,13 @@ const GlobalStyle = createGlobalStyle`
         font-size: 26px;
         color: #F0A24B;
     }
+    h3 {
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 14px;
+        color: black;
+    }
     input {
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
@@ -81,5 +88,7 @@ const GlobalStyle = createGlobalStyle`
         padding-top: 30px;
     }
 `;
+
+
 
 export default GlobalStyle;
