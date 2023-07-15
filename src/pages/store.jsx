@@ -25,7 +25,7 @@ function StorePage() {
             </GameListFilterContainer>
             <GameList>
               {Jogos.map(game => (
-                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category} />
+                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category.join(", ")} />
               ))}
             </GameList>
           </GameListContainer>

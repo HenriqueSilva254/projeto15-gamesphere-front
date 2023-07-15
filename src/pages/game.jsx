@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react";
 import Jogos from "../ArrayGames/games.js";
 
 
-function StorePage() {
+function GamePage() {
     const Category = ["Ação", "Terror", "Tiro", "Corrida", "Aventura", "RPG", "Plataforma"]
     return (
         <StorePageBody>
@@ -35,7 +35,8 @@ function StorePage() {
     );
 }
 
-export default StorePage;
+export default GamePage;
+
 const Comprar = styled.div`
     background-color: #3e372bac;
     height: 50px;

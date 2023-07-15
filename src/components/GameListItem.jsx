@@ -9,10 +9,10 @@ function GameListItem(props) {
       <InfoGamesContainer>
         <Title>
           <p>{props.title}</p>
-          <a>{props.category}</a>
+          <p>{props.category}</p>
         </Title>
 
-        <p>{props.price}</p>
+        <p>R$ {props.price}</p>
       </InfoGamesContainer>
     </GameItemContainer>
   )
@@ -44,9 +44,8 @@ const InfoGamesContainer = styled.div`
   font-size: 13px;
   padding: 8px;
 `
-const Price = styled.div`
-  
-`
+
+
 const Title = styled.div`
   display: flex;
   flex-direction: column;
