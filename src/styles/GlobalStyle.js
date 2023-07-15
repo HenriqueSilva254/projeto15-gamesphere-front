@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -17,9 +17,9 @@ const GlobalStyle = createGlobalStyle`
       }
     }
     * {
-        font-family: 'Rubik Mono One', sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
         font-style: normal;
-        font-weight: 400;
     }
     button {
         outline: none;
@@ -34,11 +34,22 @@ const GlobalStyle = createGlobalStyle`
         padding: 12px;
     }
     h1 {
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
         font-weight: 700;
         font-size: 64px;
         color: #F0A24B;
     }
-    /* input {
+    h2 {
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 26px;
+        color: #F0A24B;
+    }
+    input {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
         font-size: 20px;
         width: calc(100% - 850px);
         min-width: 600px;
@@ -51,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
             border: 2px solid #ffb6b6;
             margin: 0px;
         }
-    } */
+    }
     form {
         display: flex;
         flex-direction: column;
@@ -69,6 +80,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         padding-top: 30px;
     }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

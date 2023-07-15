@@ -6,6 +6,7 @@ import GamesHighlight from "../components/GamesHighlight";
 import { Icon } from "@iconify/react";
 import Jogos from "../ArrayGames/games.js";
 
+
 function StorePage() {
     const Category = ["Ação", "Terror", "Tiro", "Corrida", "Aventura", "RPG", "Plataforma"]
     return (
@@ -23,17 +24,10 @@ function StorePage() {
                             <img src={Jogos[3].background} alt="" />
                             <h1> {Jogos[3].title} </h1>
                             <p> {Jogos[3].description} </p>
-                            <a href="">{Jogos[3].category}</a>
                         </GameImage>
                         <Comprar>
-                            <p>Adicione ao carrinho por: {Jogos[3].price}</p>
+                            <p>Adicionar ao carrinho</p>
                         </Comprar>
-
-                        <GameList>
-                            {Jogos.map(game => (
-                                <GameListItem image={game.image} price={game.price} title={game.title} category={game.category} />
-                            ))}
-                        </GameList>
                     </GameDescription>
                 </StorePageContent>
             </StorePageContainer>
@@ -45,24 +39,23 @@ export default StorePage;
 const Comprar = styled.div`
     background-color: #3e372bac;
     height: 50px;
-    margin-top: 20px;
     p{
-        font-size: 30px;
-        padding: 10px 0px 10px 20px;
-        
+        margin: 20px;
     }
 `
 const GameImage = styled.div`
-    margin-top: 55px;
+  margin-top: 55px;
 
-    img{
+  img {
+    object-fit: cover;
+    object-position: 0 -60px;
     width: 100%;
     height: 550px;
     }
     h1{
         margin: 20px;
     }
-    a, p{  
+    p{  
         margin: 20px;
         font-size: 20px;
     }
@@ -70,7 +63,7 @@ const GameImage = styled.div`
 const GameDescription = styled.div`
     background-color: #d9d9d9ac;
     width: 100%;
-    height: 953px;
+    height: 1000px;
 `
 const StorePageContainer = styled.div`
   height: 100%;
@@ -99,7 +92,6 @@ const StorePageBody = styled.section`
   justify-content: center;
   align-items: center;
 `;
-
 
 const GameList = styled.div`
   width: 100%;
