@@ -28,7 +28,7 @@ const GameFilterContainer = styled.div`
   width: 150px;
   height: fit-content;
   padding: 12px 6px;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   display: flex;
   flex-direction: column;
 
@@ -41,13 +41,11 @@ const GameFilterContainer = styled.div`
 `;
 
 const ButtonSlide = styled.a`
-  margin: 1rem;
   display: inline-block;
   position: relative;
   cursor: pointer;
   overflow: hidden;
   color: #222;
-  padding: 0.5em 1em;
   border: none;
   outline: none;
   z-index: 1;
