@@ -1,28 +1,27 @@
-import styled from "styled-components"
-import axios from "axios"
-import { Link, useNavigate } from "react-router-dom"
-import { useState } from "react"
+import styled from "styled-components";
+import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 axios.defaults.baseURL = `${import.meta.env.VITE_API_URL}`;
 
 export default function SignInPage() {
-
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const navigate = useNavigate()
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   // function para fazer login
   function HeadLogin(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    const body = { email, password }
-    const promise = axios.post("/sign-in", body )
-    .then(res => {
-        console.log(res.data)
-        navigate("/home")
-    })
-    .catch(err => console.log(err.response.data.message))
-    
+    const body = { email, password };
+    const promise = axios
+      .post("/sign-in", body)
+      .then((res) => {
+        console.log(res.data);
+        navigate("/home");
+      })
+      .catch((err) => console.log(err.response.data.message));
   }
 
   // layout da page login
@@ -48,26 +47,24 @@ export default function SignInPage() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button data-test="sign-in-submit" >Entrar</button>
+        <button data-test="sign-in-submit">Entrar</button>
       </form>
 
-      <Link to={"/sign-up"}>
-        Primeira vez? Cadastre-se!
-      </Link>
+      <Link to={"/sign-up"}>Primeira vez? Cadastre-se!</Link>
     </SingInContainer>
-  )
+  );
 }
 
 const SingInContainer = styled.section`
   overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    input {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  input {
     font-size: 20px;
     width: calc(100% - 850px);
     min-width: 400px;
@@ -75,23 +72,22 @@ const SingInContainer = styled.section`
     outline: none;
     border: none;
     ::placeholder {
-      color: white; 
+      color: white;
     }
     padding: 15px;
     margin: 1px;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     :focus {
       border: 2px solid #ffb6b6;
       margin: 0px;
     }
   }
-  
+
   h1 {
     font-weight: 700;
     font-size: 64px;
-    color: #F0A24B;
-    top: 80px;
-    position: absolute;
+    color: #f0a24b;
+    /* top: 80px; */
   }
   form {
     display: flex;
@@ -103,4 +99,4 @@ const SingInContainer = styled.section`
     border-radius: 5px;
     margin-top: 350px;
   }
-  `
+`;

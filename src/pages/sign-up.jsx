@@ -124,7 +124,7 @@ const SignUpContainer = styled.div`
             font-weight: 700;
             font-size: 64px;
             color: #F0A24B;
-            top: 80px;
+            top: 40px;
             position: absolute;
         }
     form {
@@ -135,6 +135,6 @@ const SignUpContainer = styled.div`
         gap: 15px;
         width: 90%;
         border-radius: 5px;
-        margin-top: 280px;
+        margin-top: 10%;
     }
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
+import { Icon } from "@iconify/react";
 
 function GameListItem(props) {
   return (
@@ -14,9 +15,12 @@ function GameListItem(props) {
           <p>{props.category}</p>
         </GameCategory>
       </InfoGamesContainer>
-      <GamePrice>
+      <GamePriceContainer>
+        <button>
+          <StyledIcon icon="material-symbols:add-shopping-cart-rounded" />{" "}
+        </button>
         R$ {props.price}
-      </GamePrice>
+      </GamePriceContainer>
     </GameItemContainer>
   );
 }
@@ -56,10 +60,30 @@ const Title = styled.div`
 const GameCategory = styled.div`
   display: flex;
 `;
-const GamePrice = styled.div`
+const GamePriceContainer = styled.div`
   display: flex;
+  margin: 0 8px 8px 0px;
+  flex-direction: column;
+  align-items: end;
   bottom: 0px;
   right: 0px;
   font-size: 14px;
   white-space: nowrap;
+
+  button {
+    transform: scale(0.6);
+    transform-origin: right;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    color: #f0a24b;
+    :hover {
+      color: lightgray;
+    }
+  }
+`;
+
+const StyledIcon = styled(Icon)`
+  font-size: 24px;
+  color: white;
 `;
