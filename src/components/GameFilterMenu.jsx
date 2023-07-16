@@ -40,7 +40,6 @@ const GameFilterContainer = styled.div`
   }
 `;
 
-
 const ButtonSlide = styled.a`
   margin: 1rem;
   display: inline-block;
@@ -61,7 +60,7 @@ const ButtonSlide = styled.a`
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #F0A24B;
+    background-color: #f0a24b;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;

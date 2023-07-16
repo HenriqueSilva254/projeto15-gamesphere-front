@@ -9,6 +9,7 @@ function Nav() {
       <NavLeft>
         <div>{menu}</div>
       </NavLeft>
+
       <NavRight>
         <StyledIcon icon="material-symbols:shopping-cart" />
         <StyledIcon icon="material-symbols:account-circle" />
@@ -48,6 +49,10 @@ const NavLeft = styled.div`
   justify-content: start;
   align-items: center;
   margin-left: 16px;
+`;
+
+const NavButtonsContainer = styled.div`
+  display: flex;
 `;
 const NavRight = styled.div`
   display: flex;
