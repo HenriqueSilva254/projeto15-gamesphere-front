@@ -4,6 +4,7 @@ import SignInPage from "./pages/sign-in";
 import SignUpPage from "./pages/sign-up";
 import StorePage from "./pages/store";
 import GamePage from "./pages/game";
+import CategoryGames from "./pages/categoryGames";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
           <Route path="/sign-in" element={<SignInPage />} />
           <Route path="/sign-up" element={<SignUpPage />} />
           <Route path="/" element={<StorePage />} />
-          <Route path="/Game" element={<GamePage />} />
+          <Route path="/Game/:title" element={<GamePage />} />
+          <Route path="/CategoryGames/:category" element={<CategoryGames />} />
         </Routes>
       </BrowserRouter>
     </PagesContainer>

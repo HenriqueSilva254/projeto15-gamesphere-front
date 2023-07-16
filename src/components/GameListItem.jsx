@@ -1,23 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 function GameListItem(props) {
+ 
   return (
-    <GameItemContainer>
-      <img src={props.image} alt="" />
-      <InfoGamesContainer>
-        <Title>
-          <h3>{props.title}</h3>
-        </Title>
+    <Link to={`/Game/${props.title}`}>
+      <GameItemContainer>
+        <img src={props.image} alt="" />
+        <InfoGamesContainer>
+          <Title>
+            <h3>{props.title}</h3>
+          </Title>
 
-        <GameCategory>
-          <p>{props.category}</p>
-        </GameCategory>
-      </InfoGamesContainer>
-      <GamePrice>
-        R$ {props.price}
-      </GamePrice>
-    </GameItemContainer>
+          <GameCategory>
+            <p>{props.category}</p>
+          </GameCategory>
+        </InfoGamesContainer>
+        <GamePrice>
+          R$ {props.price}
+        </GamePrice>
+      </GameItemContainer>
+    </Link>
   );
 }
 

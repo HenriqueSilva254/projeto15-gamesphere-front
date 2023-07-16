@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 function GameFilterMenu() {
@@ -15,7 +16,7 @@ function GameFilterMenu() {
     <GameFilterContainer>
       <h2>Category</h2>
       {Category.map((c) => (
-        <ButtonSlide href="" key={c}>{c}</ButtonSlide>
+       <Link to={`/CategoryGames/${c}`}><ButtonSlide href="" key={c}>{c}</ButtonSlide></Link>
       ))}
     </GameFilterContainer>
   );
