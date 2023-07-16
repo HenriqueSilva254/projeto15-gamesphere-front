@@ -1,15 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 
 function GameListItem(props) {
+  const navigate = useNavigate()
  
   return (
-    <Link to={`/Game/${props.title}`}>
+    
       <GameItemContainer>
-        <img src={props.image} alt="" />
-        <InfoGamesContainer>
+       
+        <img onClick={() => navigate(`/Game/${props.title}`)} src={props.image} alt="" />
+        
+        <InfoGamesContainer  onClick={() => navigate(`/Game/${props.title}`)}>
           <Title>
             <h3>{props.title}</h3>
           </Title>
@@ -18,14 +21,15 @@ function GameListItem(props) {
           <p>{props.category}</p>
         </GameCategory>
       </InfoGamesContainer>
+     
       <GamePriceContainer>
-        <button>
+        <button onClick={() => navigate("/")}>
           <StyledIcon icon="material-symbols:add-shopping-cart-rounded" />{" "}
         </button>
         R$ {props.price}
       </GamePriceContainer>
     </GameItemContainer>
-    </Link>
+   
   );
 }
 

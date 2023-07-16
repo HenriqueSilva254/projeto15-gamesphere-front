@@ -46,13 +46,13 @@ const StorePageContainer = styled.div`
   width: 60vw;
   min-width: 800px;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const StorePageContent = styled.div`
+
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -62,7 +62,6 @@ const StorePageContent = styled.div`
 
 const StorePageBody = styled.section`
   overflow-x: hidden;
-
   height: 100%;
   width: 100%;
   display: flex;
@@ -76,7 +75,7 @@ const GameListContainer = styled.div`
   height: 600px;
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
+  margin-top: 60px;
 `;
 
 const GameList = styled.div`

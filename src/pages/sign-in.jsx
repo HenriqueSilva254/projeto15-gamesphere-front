@@ -19,7 +19,7 @@ export default function SignInPage() {
       .post("/sign-in", body)
       .then((res) => {
         console.log(res.data);
-        navigate("/home");
+        navigate("/");
       })
       .catch((err) => console.log(err.response.data.message));
   }

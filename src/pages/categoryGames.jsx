@@ -73,6 +73,7 @@ const StorePageBody = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 `;
 
 const GameListContainer = styled.div`

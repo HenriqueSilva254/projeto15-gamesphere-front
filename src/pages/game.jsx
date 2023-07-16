@@ -17,15 +17,7 @@ function StorePage() {
   const {title} = useParams()
   const Game =  Jogos.find(j => j.title === title)
   console.log(Game)
-  const Category = [
-    "Ação",
-    "Terror",
-    "Tiro",
-    "Corrida",
-    "Aventura",
-    "RPG",
-    "Plataforma",
-  ];
+
 
   return (
     <StorePageBody>
@@ -133,7 +125,7 @@ const GameList = styled.div`
   flex-direction: column;
   margin-top: 15px;
   div {
-    margin: 8px 0px 0px 0px;
+    margin: 8px 15px 5px 10px;
   }
 `;
 
