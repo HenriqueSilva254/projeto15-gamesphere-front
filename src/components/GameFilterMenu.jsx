@@ -14,7 +14,7 @@ function GameFilterMenu() {
   ];
   return (
     <GameFilterContainer>
-      <h2>Category</h2>
+      <h2>Categorias</h2>
       {Category.map((c) => (
        <Link to={`/CategoryGames/${c}`}><ButtonSlide href="" key={c}>{c}</ButtonSlide></Link>
       ))}
