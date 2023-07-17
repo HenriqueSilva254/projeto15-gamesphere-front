@@ -16,7 +16,7 @@ function GameFilterMenu() {
     <GameFilterContainer>
       <h2>Categorias</h2>
       {Category.map((c) => (
-       <Link to={`/CategoryGames/${c}`}><ButtonSlide href="" key={c}>{c}</ButtonSlide></Link>
+       <Link to={`/CategoryGames/${c}`}><a href="" key={c}>{c}</a></Link>
       ))}
     </GameFilterContainer>
   );
@@ -25,12 +25,11 @@ function GameFilterMenu() {
 export default GameFilterMenu;
 
 const GameFilterContainer = styled.div`
-  width: 150px;
-  height: fit-content;
-  padding: 12px 6px;
-  line-height: 1.2;
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  width: 150px;
+  padding: 12px 6px;
 
   background-color: #d9d9d9;
 
@@ -38,41 +37,10 @@ const GameFilterContainer = styled.div`
     font-size: 18px;
     color: orange;
   }
-`;
-
-const ButtonSlide = styled.a`
-  margin: 1rem;
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  color: #222;
-  padding: 0.5em 1em;
-  border: none;
-  outline: none;
-  z-index: 1;
-
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f0a24b;
-    opacity: 0.3;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 300ms ease-in-out;
-  }
-
-  &:hover:before,
-  &:focus:before {
-    transform: scaleX(1);
-  }
-
-  &:hover {
-    color: white;
+  a{
+    :hover{
+        color: darkgray;
+    }
   }
 `;
+
