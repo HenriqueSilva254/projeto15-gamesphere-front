@@ -6,7 +6,7 @@ const Jogos =
         description: "Um vírus letal se espalha por Los Angeles e transforma os habitantes em zumbis. Descubra a verdade por trás disso e sobre quem você é depois de levar mordidas, se infectar e se tornar mais que apenas imune.",
         category: ["Ação", "Terror"],
         price: "299,00",
-        background: "https://playzuando.com.br/wp-content/uploads/2023/04/maxresdefault.jpg",
+        background: "https://img.ibxk.com.br/2023/04/17/17162529309285.jpg?ims=328x",
         esrb: 16
     }
         ,
@@ -233,8 +233,232 @@ const Jogos =
         price: "199,00",
         background: "https://www.gamereactor.pt/media/89/gears5_3328933b.jpg"
     }
+    ,
+    {
+        title: "Amnesia: The Dark Descent",
+        image: "https://bitwares.net/wp-content/uploads/2019/12/1.jpg",
+        description: "Embarque em uma jornada aterrorizante em um castelo sombrio, onde você precisa desvendar mistérios e sobreviver a encontros aterrorizantes. Prepare-se para enfrentar seus medos neste clássico jogo de terror.",
+        category: ["Terror"],
+        price: "99,00",
+        background: "https://i.redd.it/1ibsccjynor71.jpg"
+    }
+    ,
+    {
+        title: "Outlast",
+        image: "https://cdn1.epicgames.com/6504cc61472e498796e0b4963a201438/offer/EGS_TheOutlastTrials_RedBarrels_S1-2560x1440-94e9ca382991373a4a464665014a78d4.jpg",
+        description: "Explore um asilo abandonado e enfrente horrores indescritíveis neste jogo de terror psicológico. Com uma câmera como única fonte de luz, descubra os segredos sombrios e tente sobreviver.",
+        category: ["Ação", "Terror"],
+        price: "79,00",
+        background: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKluqMCpTbCkTkAgsMHuQTD_KJMeIZjqZPkw&usqp=CAU"
+    }
+    ,
+    {
+        title: "Resident Evil 7: Biohazard",
+        image: "https://cdn-ext.fanatical.com/production/product/1280x720/825516f3-77c0-48e3-a92f-cb1bfab33ce0.jpeg",
+        description: "Adentre uma casa assombrada e enfrente horrores grotescos nesta experiência aterrorizante de Resident Evil. Com uma perspectiva em primeira pessoa e uma narrativa envolvente, Resident Evil 7: Biohazard é um jogo de terror que o deixará à beira do pânico.",
+        category: ["Ação", "Terror"],
+        price: "179,00",
+        background: "https://gamerview.uai.com.br/wp-content/uploads/2017/01/re7_5.jpg"
+    }
+    ,
+    {
+        title: "Layers of Fear",
+        image: "https://i.ytimg.com/vi/oIqTtdW3SaE/maxresdefault.jpg",
+        description: "Explore uma mansão assombrada repleta de pinturas macabras e segredos perturbadores. Neste jogo de terror psicológico, mergulhe em uma jornada angustiante e descubra a verdade por trás da loucura.",
+        category: ["Terror"],
+        price: "69,00",
+        background: "https://wallpapers.com/images/hd/layers-of-fear-grotesque-magnum-opus-3f6gnn4yk87opolv.jpg"
+    }
+    ,
+    {
+        title: "Dead Space",
+        image: "https://gamerspoilerbrasil.b-cdn.net/wp-content/uploads/2023/03/WCCFdeadspaceremake8.jpg",
+        description: "Assuma o papel de Isaac Clarke, um engenheiro espacial, e lute pela sobrevivência em uma nave infestada por criaturas grotescas. Com uma atmosfera sombria e um combate tenso, Dead Space é um jogo de terror sci-fi imperdível.",
+        category: ["Ação", "Tiro", "Terror"],
+        price: "129,00",
+        background: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmraAbIeRnLCijxa8RnGzOCbejkqSd_ahO6qoJjnNRPPCURllsrsABO-j6KSVmZtmc0BA&usqp=CAU"
+    }
+    ,
+    {
+        title: "Silent Hill 2",
+        image: "https://www.relyonhorror.com/wp-content/uploads/2023/01/silenthill2_1-1.jpg",
+        description: "Adentre o aterrorizante mundo de Silent Hill e desvende os segredos sombrios dessa cidade amaldiçoada. Enfrente criaturas grotescas, resolva quebra-cabeças perturbadores e mergulhe em uma narrativa psicológica intensa.",
+        category: ["Ação", "Terror"],
+        price: "149,00",
+        background: "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/07/silent-hill-2.jpg"
+    }
+    ,
+    {
+        title: "Alien: Isolation",
+        image: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/a/alien-isolation-switch/hero",
+        description: "Entre no universo de Alien neste jogo de terror em primeira pessoa. Lute pela sobrevivência em uma estação espacial infestada por um xenomorfo implacável, usando estratégia e furtividade para evitar ser encontrado.",
+        category: ["Ação", "Terror"],
+        price: "169,00",
+        background: "https://cdn.cloudflare.steamstatic.com/steam/apps/282510/ss_5913f447083525de6e928b21d9102cf51fce7508.1920x1080.jpg?t=1571829082"
+    }
+    ,
+    {
+        title: "Until Dawn",
+        image: "https://i.ytimg.com/vi/-9vA1rIoee8/maxresdefault.jpg",
+        description: "Em uma cabana isolada nas montanhas, você deve tomar decisões difíceis que afetam o destino de um grupo de amigos. Com uma narrativa cinematográfica e momentos de terror, Until Dawn é um jogo que testará sua coragem.",
+        category: ["Terror"],
+        price: "119,00",
+        background: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bt9U7Eonzjz7sSX3dqR4JtR0rUMYEFjvNA&usqp=CAU"
+    }
+    ,
+    {
+        title: "Blair Witch",
+        image: "https://i.ytimg.com/vi/DfLJn09J3rY/maxresdefault.jpg",
+        description: "Explore uma floresta assombrada em busca de um garoto desaparecido. Enfrente seus medos e descubra os segredos sombrios por trás da lenda da Bruxa de Blair.",
+        category: ["Terror"],
+        price: "129,00",
+        background: "https://s3.amazonaws.com/prod-media.gameinformer.com/styles/full/s3/2019/07/23/37c1398c/blair_witch_e32019_parking.png"
+    }
+    ,
+    {
+        title: "S.T.A.L.K.E.R.: Shadow of Chernobyl",
+        image: "https://assets.nuuvem.com/image/upload/v1/products/5f34372ea3f8b11a07b98c0a/sharing_images/a9mn20tjgqugeqimtprr.jpg",
+        description: "Aventure-se na Zona de Exclusão de Chernobyl, um ambiente pós-apocalíptico repleto de perigos e mutantes. Explore, sobreviva e desvende os mistérios que cercam essa área contaminada.",
+        category: ["Ação", "Terror"],
+        price: "199,00",
+        background: "https://cdn.mos.cms.futurecdn.net/9a6c5206c70efe1e2b9e18a5dbfd79f8-1200-80.jpg"
+    }
+    ,
+    {
+        title: "Skyrim",
+        image: "https://files.tecnoblog.net/wp-content/uploads/2019/02/skyrim.jpg",
+        description: "Explore uma vasta terra de fantasia como o Dragonborn, um herói destinado a derrotar dragões e descobrir seu verdadeiro poder. Com uma infinidade de quests e possibilidades de personalização, Skyrim é um RPG de mundo aberto imersivo.",
+        category: ["RPG"],
+        price: "149,00",
+        background: "https://win.gg/wp-content/uploads/2022/09/6342621909_9b822ee2bd_k-1.jpg"
+    }
+    ,
+    {
+    title: "Fallout 4",
+    image: "https://meups.com.br/wp-content/uploads/2015/10/Fallout-41-900x503.jpg",
+    description: "Aventure-se em um mundo pós-apocalíptico e explore um ambiente cheio de segredos, criaturas mutantes e escolhas difíceis. Com uma jogabilidade de ação e elementos de construção, Fallout 4 oferece uma experiência única de RPG.",
+    category: ["RPG"],
+    price: "179,00",
+    background: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKt3I56I7opP4pST7-2j7p-Md6Vazg5aYDmv9PRjL-AJP7uvODQKQRxlCqYC8e2dbJa0&usqp=CAU"
+    }
+    ,
+    {
+    title: "Dragon Age: Inquisition",
+    image: "https://i0.wp.com/www.nerdssauros.com.br/wp-content/uploads/2018/08/Dragon_Age_Inquisition_wallpaper.jpg?resize=650%2C366&ssl=1",
+    description: "Assuma o papel de um Inquisidor e lidere uma equipe de heróis em uma missão para salvar o mundo da destruição. Com um vasto mundo para explorar, batalhas táticas e escolhas que moldam a narrativa, Dragon Age: Inquisition é um RPG épico.",
+    category: ["RPG"],
+    price: "159,00",
+    background: "https://gamingbolt.com/wp-content/uploads/2014/11/3-IfarIhb.jpg"
+    }
+    ,
+    {
+    title: "Final Fantasy VII Remake",
+    image: "https://cdn1.epicgames.com/offer/6f43ab8025ad42d18510aa91e9eb688b/EGS_FINALFANTASYVIIREMAKEINTERGRADE_SquareEnix_S1_2560x1440-85f829541a833442eaace75d02e0f07d",
+    description: "Reviva a clássica história de Cloud Strife e seu grupo de heróis enquanto lutam contra a tirania da Shinra Corporation. Com um sistema de combate renovado e gráficos impressionantes, Final Fantasy VII Remake é um RPG emocionante.",
+    category: ["RPG"],
+    price: "249,00",
+    background: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/03/impresiones-final-fantasy-vii-remake-1881251.jpg"
+    }
+    ,
+    {
+    title: "Mass Effect 2",
+    image: "https://cdn.cloudflare.steamstatic.com/steam/apps/2362420/capsule_616x353.jpg?t=1684251878",
+    description: "Participe de uma missão suicida para salvar a galáxia como o Comandante Shepard, em um jogo de RPG de ação emocionante. Com escolhas morais impactantes e um elenco memorável de personagens, Mass Effect 2 é um marco no gênero.",
+    category: ["RPG"],
+    price: "129,00",
+    background: "https://delfos.net.br/wp-content/uploads/2021/07/mass-effect-legendary-edition-20210710191007.jpg"
+    }
+    ,
+    {
+    title: "Diablo III",
+    image: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000012305/9d8f95e20b59b76eab1a74aaefdabbabe6438b6761efc4efa6306dde638987f3",
+    description: "Desbrave masmorras cheias de monstros e tesouros em um RPG de ação com elementos de hack and slash. Escolha entre diversas classes de personagens e embarque em uma jornada para derrotar o mal em Diablo III.",
+    category: ["RPG"],
+    price: "99,00",
+    background: "https://img.ibxk.com.br/2018/10/18/18105906353121.jpg?ims=328x"
+    }
+    ,
+    {
+    title: "Persona 5",
+    image: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/p/persona-5-royal-switch/hero",
+    description: "Viva uma vida dupla como um estudante colegial durante o dia e um ladrão fantasma à noite. Com uma combinação única de elementos de RPG e simulador de vida, Persona 5 oferece uma experiência cativante e estilizada.",
+    category: ["RPG"],
+    price: "189,00",
+    background: "https://www.destructoid.com/wp-content/uploads/2020/12/530926-AAA.jpg"
+    }
+    ,
+    {
+        title: "Super Mario Odyssey",
+        image: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5",
+        description: "Acompanhe Mario em uma aventura por diversos reinos em busca de salvar a Princesa Peach. Com mecânicas inovadoras e níveis criativos, Super Mario Odyssey oferece uma experiência[ de plataforma ]divertida e cativante.",
+        category: ["Plataforma"],
+        price: "299,00",
+        background: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34slABfSv7BxkswF3kEryB0ytfGeaUe407L41BkKJQYGQFs5tVBI-zX3lmPLeh2K7NAA&usqp=CAU"
+    }
+    ,
+    {
+        title: "Celeste",
+        image: "https://dropsdejogos.uai.com.br/wp-content/uploads/sites/10/2018/01/k2_items_src_7fa687df0b499f5d3357b01a278280e8-1280x720.jpg",
+        description: "Acompanhe Madeline em uma jornada desafiadora em busca de superar seus medos internos. Com uma jogabilidade precisa e um design de níveis engenhoso, Celeste oferece uma experiência[ de plataforma ]envolvente.",
+        category: ["Plataforma"],
+        price: "79,00",
+        background: "https://miro.medium.com/max/1920/1*n0F_Gv8wtt5S9QsOa9OMEQ.jpeg"
+    }
+    ,
+    {
+        title: "Ori and the Will of the Wisps",
+        image: "https://modomeu.com/wp-content/uploads/2020/03/Ori-and-the-Will-of-the-Wisps-cover.png",
+        description: "Aventure-se em um mundo mágico como Ori, um espírito guardião, em busca de seu destino. Com visuais deslumbrantes, trilha sonora emocionante e uma jogabilidade fluida, Ori and the Will of the Wisps é uma obra-prima da[ plataforma.]",
+        category: ["Plataforma"],
+        price: "199,00",
+        background: "https://www.ultimaficha.com.br/wp-content/uploads/2020/03/mini_Ori-And-The-Will-Of-The-Wisps-08_03_2020-10_58_10.png"
+    }
+    ,
+    {
+        title: "Hollow Knight",
+        image: "https://cdn.akamai.steamstatic.com/steam/apps/367520/capsule_616x353.jpg?t=1667006028",
+        description: "Explore um vasto mundo subterrâneo repleto de segredos e criaturas estranhas. Com uma atmosfera sombria, combate desafiador e um estilo artístico cativante, Hollow Knight é um jogo[ de plataforma ]que conquista os jogadores.",
+        category: ["Plataforma"],
+        price: "149,00",
+        background: "https://assets1.ignimgs.com/2017/09/19/switch-hollowknight-screen-23-1505859843487.png"
+    }
+    ,
+    {
+        title: "Crash Bandicoot N. Sane Trilogy",
+        image: "https://techraptor.net/sites/default/files/styles/image_header/public/imports/2017/07/Crash-Bandicoot-N-Sane-Trilogy-Review.png?itok=DQB8mj4m",
+        description: "Reviva as aventuras clássicas de Crash Bandicoot em uma trilogia remasterizada. Salte, gire e gire pelos níveis desafiadores enquanto enfrenta os vilões icônicos desta série[ de plataforma ]adorada.",
+        category: ["Plataforma"],
+        price: "179,00",
+        background: "https://i0.wp.com/waytoomany.games/wp-content/uploads/2017/06/crash-bandicoot-n_-sane-trilogy_20170628214204.jpg?fit=1920%2C1080&ssl=1"
+    }
+    ,
+    {
+        title: "Rayman Legends",
+        image: "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_14/H2x1_WiiU_RaymanLegends_image1600w.jpg",
+        description: "Acompanhe Rayman e seus amigos em uma aventura colorida e cheia de diversão. Com uma jogabilidade fluida e uma variedade de desafios criativos, Rayman Legends é um jogo[ de plataforma ]que agrada a todas as idades.",
+        category: ["Plataforma"],
+        price: "129,00",
+        background: "https://image.api.playstation.com/cdn/UP0001/CUSA00069_00/FREE_CONTENTyyqdU2cD71RPYabGU28f/PREVIEW_SCREENSHOT10_51830.jpg"
+    }
+    ,
+    {
+        title: "Cuphead",
+        image: "https://gaming-cdn.com/images/products/2310/orig/cuphead-pc-mac-game-steam-cover.jpg?v=1656487643",
+        description: "Enfrente chefes desafiadores e percorra um mundo de desenhos animados em uma estética retrô. Com visuais impressionantes e uma trilha sonora envolvente, Cuphead é uma experiência única de[ plataforma.]",
+        category: ["Plataforma"],
+        price: "139,00",
+        background: "https://rollingstone.uol.com.br/media/uploads/cactonio_spinoza_em_cuphead_foto_reproducao_mdhr.jpg"
+    }
+    ,
+    {
+        title: "Little Nightmares",
+        image: "https://cdn.record.pt/images/2017-05/img_834x600$2017_05_01_23_07_00_1258724.jpg",
+        description: "Explore um mundo sombrio e perturbador cheio de criaturas aterrorizantes. Com uma atmosfera arrepiante e quebra-cabeças desafiadores, Little Nightmares oferece uma experiência[ de plataforma ]única.",
+        category: ["Plataforma", "Terror"],
+        price: "109,00",
+        background: "https://cdn.example.com/little-nightmares-background.jpg"
+    }
     
-
     ] 
 
     export default Jogos

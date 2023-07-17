@@ -99,6 +99,7 @@ const StorePageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 `;
 
 const StorePageContent = styled.div`
@@ -123,9 +124,9 @@ const GameList = styled.div`
   height: fit-content;
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 35px;
   div {
-    margin: 8px 15px 5px 10px;
+    margin: 8px 15px 10px 0px;
   }
 `;
 

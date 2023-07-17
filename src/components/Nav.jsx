@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
-
+import { Link } from "react-router-dom";
 function Nav() {
   const [menu, setMenu] = useState(<StyledIcon icon="ci:hamburger" />);
   return (
     <NavContainer>
       <NavLeft>
         <div>{menu}</div>
+        <Link to={"/"}>Home</Link>
       </NavLeft>
-
+      
       <NavRight>
         <StyledIcon icon="material-symbols:shopping-cart" />
         <StyledIcon icon="material-symbols:account-circle" />
