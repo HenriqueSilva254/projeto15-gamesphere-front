@@ -1,13 +1,30 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { styled } from "styled-components";
 import { UserContext } from "../contexts/userContext.jsx";
-import GameListItem from "../components/GameListItem.jsx";
+import GameListItemCompra from "../components/GameListItemCompra.jsx";
 import Nav from "../components/nav.jsx";
+import Jogos from "../ArrayGames/games.js";
+import Auth from "../services/api.js";
+import { useNavigate } from "react-router-dom";
 
 function ShoppingCartPage() {
   const { userCart, setUserCart } = useContext(UserContext);
+  const { totalPurchaseValue, setTotalPurchaseValue } = useState(0);
+
+  const navigate = useNavigate();
 
   console.log(userCart);
+
+  function handlePurchase() {
+    Auth.purchaseGames(userCart).then(purchase()).catch();
+  }
+
+  function purchase() {
+    console.log("Purchase");
+    localStorage.removeItem("cart");
+    window.location.reload()
+    navigate("/store");
+  }
 
   return (
     <ShoppingCartBody>
@@ -17,14 +34,16 @@ function ShoppingCartPage() {
         <h1>Shopping Cart</h1>
         <ShoppingCartList>
           {userCart.map((game) => (
-            <GameListItem
+            <GameListItemCompra
               key={game.title}
               image={game.image}
               price={game.price}
               title={game.title}
+              category={game.category.join(", ")}
             />
           ))}
         </ShoppingCartList>
+        <PurchaseButton onClick={handlePurchase}>Comprar</PurchaseButton>
       </ShoppingCartContainer>
     </ShoppingCartBody>
   );
@@ -42,6 +61,10 @@ const ShoppingCartContainer = styled.div`
   min-width: 800px;
   z-index: 1;
   top: 80px;
+`;
+
+const PurchaseButton = styled.button`
+  width: 100%;
 `;
 
 const ShoppingCartList = styled.div`

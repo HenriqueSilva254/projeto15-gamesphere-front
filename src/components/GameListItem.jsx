@@ -10,8 +10,9 @@ function GameListItem(props) {
   const { userCart, setUserCart, updateCart } = useContext(UserContext);
 
   function handleAddItem() {
-    const jogoCarrinho = Jogos.filter((j) => j.title.includes(props.title));
+    const jogoCarrinho = Jogos.find((j) => j.title.includes(props.title));
     const isItemInCart = userCart.some((item) => item.title === props.title);
+    
     if (isItemInCart) {
       alert("Item já está no carrinho!");
     } else {

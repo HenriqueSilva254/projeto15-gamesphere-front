@@ -16,8 +16,8 @@ function Nav() {
     <NavContainer>
       <NavLeft>
         {/* <div>{menu}</div> */}
-       <Link to={"/"}>Home</Link>
-       <Link>Biblioteca</Link>
+       <Link to={"/store"}>Home</Link>
+       <Link to={"/library"}>Biblioteca</Link>
       </NavLeft>
       
       <NavRight>

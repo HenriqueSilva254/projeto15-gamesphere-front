@@ -19,7 +19,7 @@ export default function SignInPage() {
       .post("/sign-in", body)
       .then((res) => {
         console.log(res.data);
-        navigate("/");
+        navigate("/store");
       })
       .catch((err) => console.log(err.response.data.message));
   }
@@ -97,5 +97,8 @@ const SingInContainer = styled.section`
     width: 90%;
     border-radius: 5px;
     margin-top: 50px;
+  }
+  button{
+    width: fit-content;
   }
 `;

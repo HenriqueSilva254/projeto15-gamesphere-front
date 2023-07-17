@@ -139,6 +139,9 @@ const SignUpContainer = styled.div`
     gap: 15px;
     width: 90%;
     border-radius: 5px;
-    margin-top: 10%;
+    margin-top: 150px;
+  }
+  button{
+    width: fit-content;
   }
 `;

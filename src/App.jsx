@@ -7,6 +7,7 @@ import GamePage from "./pages/game.jsx";
 import CategoryGames from "./pages/categoryGames.jsx";
 import ShoppingCartPage from "./pages/shoppingCart.jsx";
 import UserProvider from "./contexts/userContext.jsx";
+import LibraryPage from "./pages/library.jsx";
 
 export default function App() {
   return (
@@ -14,15 +15,17 @@ export default function App() {
       <UserProvider>
         <BrowserRouter>
           <Routes>
+            <Route path="/" element={<SignInPage />} />
             <Route path="/sign-in" element={<SignInPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
-            <Route path="/" element={<StorePage />} />
+            <Route path="/store" element={<StorePage />} />
             <Route path="/Game/:title" element={<GamePage />} />
             <Route
               path="/CategoryGames/:category"
               element={<CategoryGames />}
             />
             <Route path="/shoppingCart" element={<ShoppingCartPage />} />
+            <Route path="/library" element={<LibraryPage />} />
           </Routes>
         </BrowserRouter>
       </UserProvider>
