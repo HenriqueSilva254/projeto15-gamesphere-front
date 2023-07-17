@@ -2,8 +2,16 @@ import React, { useState } from "react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 function Nav() {
+  const navigate = useNavigate();
   const [menu, setMenu] = useState(<StyledIcon icon="ci:hamburger" />);
+
+  function handleShoppingCartClick() {
+    navigate("/shoppingCart")
+  }
+
   return (
     <NavContainer>
       <NavLeft>
@@ -13,7 +21,7 @@ function Nav() {
       </NavLeft>
       
       <NavRight>
-        <StyledIcon icon="material-symbols:shopping-cart" />
+        <StyledIcon icon="material-symbols:shopping-cart" onClick={handleShoppingCartClick}/>
         <StyledIcon icon="material-symbols:account-circle" />
       </NavRight>
     </NavContainer>

@@ -25,6 +25,7 @@ function GamesHighlight() {
 const ComponenteDiv = styled.div`
   width: 651px;
   margin-top: 60px;
+  cursor: pointer;
 
   img {
     width: 726px;

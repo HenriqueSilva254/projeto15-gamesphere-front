@@ -3,14 +3,24 @@ import { Link, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 import { UserContext } from "../contexts/userContext.jsx";
-
+import Jogos from "../ArrayGames/games.js";
 
 function GameListItem(props) {
   const navigate = useNavigate();
-  const { userCart, setUserCart } = useContext(UserContext);
+  const { userCart, setUserCart, updateCart } = useContext(UserContext);
 
   function handleAddItem() {
-    
+    const jogoCarrinho = Jogos.filter((j) => j.title.includes(props.title));
+    const isItemInCart = userCart.some((item) => item.title === props.title);
+    if (isItemInCart) {
+      alert("Item já está no carrinho!");
+    } else {
+      const currentCart = Array.isArray(userCart)
+        ? [...userCart, jogoCarrinho]
+        : [jogoCarrinho];
+      updateCart(currentCart);
+      console.log(currentCart);
+    }
   }
 
   return (
@@ -54,6 +64,7 @@ const GameItemContainer = styled.div`
 
   background-color: #d9d9d9;
   img {
+    cursor: pointer;
     object-fit: cover;
     min-width: 160px;
     height: 100%;
@@ -87,6 +98,7 @@ const GamePriceContainer = styled.div`
   white-space: nowrap;
 
   button {
+    cursor: pointer;
     transform: scale(0.6);
     transform-origin: right;
     width: 120px;
