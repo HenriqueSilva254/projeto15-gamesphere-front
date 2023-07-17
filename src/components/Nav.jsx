@@ -7,8 +7,9 @@ function Nav() {
   return (
     <NavContainer>
       <NavLeft>
-        <div>{menu}</div>
-        <Link to={"/"}>Home</Link>
+        {/* <div>{menu}</div> */}
+       <Link to={"/"}>Home</Link>
+       <Link>Biblioteca</Link>
       </NavLeft>
       
       <NavRight>
@@ -25,7 +26,6 @@ const NavContainer = styled.div`
   width: 100%;
   height: 50px;
   z-index: 10;
-
   background-color: #d9d9d9;
   display: flex;
   flex-direction: row;
@@ -34,6 +34,7 @@ const NavContainer = styled.div`
   top: 0;
   left: 0;
   filter: drop-shadow(0px 0px 10px #000000a6);
+ 
 `;
 
 const StyledIcon = styled(Icon)`
@@ -47,9 +48,20 @@ const StyledIcon = styled(Icon)`
 const NavLeft = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   margin-left: 16px;
+  width: 200px;
+
+  a{
+    color: #f0a24b;
+    padding-top: 0px;
+  }
+  a:hover{
+    transition: 2s;
+    font-size: 19px;
+    color: #fc8700;
+  }
 `;
 
 const NavButtonsContainer = styled.div`

@@ -61,6 +61,7 @@ const ButtonSlide = styled.a`
     bottom: 0;
     width: 100%;
     background-color: #f0a24b;
+    opacity: 0.3;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
