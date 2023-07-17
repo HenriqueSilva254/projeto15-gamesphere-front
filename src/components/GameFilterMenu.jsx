@@ -16,7 +16,9 @@ function GameFilterMenu() {
     <GameFilterContainer>
       <h2>Categorias</h2>
       {Category.map((c) => (
-       <Link key={c} to={`/CategoryGames/${c}`}>{c}</Link>
+        <Link key={c} to={`/CategoryGames/${c}`}>
+          <a href="">{c}</a>
+        </Link>
       ))}
     </GameFilterContainer>
   );
@@ -37,10 +39,9 @@ const GameFilterContainer = styled.div`
     font-size: 18px;
     color: orange;
   }
-  a{
-    :hover{
-        color: darkgray;
+  a {
+    :hover {
+      color: darkgray;
     }
   }
 `;
-

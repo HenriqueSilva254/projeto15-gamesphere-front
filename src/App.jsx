@@ -1,25 +1,31 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
-import SignInPage from "./pages/sign-in";
-import SignUpPage from "./pages/sign-up";
-import StorePage from "./pages/store";
-import GamePage from "./pages/game";
-import CategoryGames from "./pages/categoryGames";
-// import ShoppingCartPage from "./pages/shoppingCart";
+import SignInPage from "./pages/sign-in.jsx";
+import SignUpPage from "./pages/sign-up.jsx";
+import StorePage from "./pages/store.jsx";
+import GamePage from "./pages/game.jsx";
+import CategoryGames from "./pages/categoryGames.jsx";
+import ShoppingCartPage from "./pages/shoppingCart.jsx";
+import UserProvider from "./contexts/userContext.jsx";
 
 export default function App() {
   return (
     <PagesContainer>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/sign-in" element={<SignInPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
-          <Route path="/" element={<StorePage />} />
-          <Route path="/Game/:title" element={<GamePage />} />
-          <Route path="/CategoryGames/:category" element={<CategoryGames />} />
-          {/* <Route path="/shoppingCart" element={<ShoppingCartPage />} /> */}
-        </Routes>
-      </BrowserRouter>
+      <UserProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/sign-in" element={<SignInPage />} />
+            <Route path="/sign-up" element={<SignUpPage />} />
+            <Route path="/" element={<StorePage />} />
+            <Route path="/Game/:title" element={<GamePage />} />
+            <Route
+              path="/CategoryGames/:category"
+              element={<CategoryGames />}
+            />
+            <Route path="/shoppingCart" element={<ShoppingCartPage />} />
+          </Routes>
+        </BrowserRouter>
+      </UserProvider>
     </PagesContainer>
   );
 }

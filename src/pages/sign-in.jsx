@@ -57,7 +57,7 @@ export default function SignInPage() {
 
 const SingInContainer = styled.section`
   overflow-x: hidden;
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,6 @@ const SingInContainer = styled.section`
     font-weight: 700;
     font-size: 64px;
     color: #f0a24b;
-    /* top: 80px; */
   }
   form {
     display: flex;
@@ -97,6 +96,6 @@ const SingInContainer = styled.section`
     gap: 20px;
     width: 90%;
     border-radius: 5px;
-    margin-top: 350px;
+    margin-top: 50px;
   }
 `;

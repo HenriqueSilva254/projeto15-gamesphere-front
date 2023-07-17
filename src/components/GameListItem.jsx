@@ -1,35 +1,43 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
+import { UserContext } from "../contexts/userContext.jsx";
+
 
 function GameListItem(props) {
-  const navigate = useNavigate()
- 
-  return (
+  const navigate = useNavigate();
+  const { userCart, setUserCart } = useContext(UserContext);
+
+  function handleAddItem() {
     
-      <GameItemContainer>
-       
-        <img onClick={() => navigate(`/Game/${props.title}`)} src={props.image} alt="" />
-        
-        <InfoGamesContainer  onClick={() => navigate(`/Game/${props.title}`)}>
-          <Title>
-            <h3>{props.title}</h3>
-          </Title>
+  }
+
+  return (
+    <GameItemContainer>
+      <img
+        onClick={() => navigate(`/Game/${props.title}`)}
+        src={props.image}
+        alt=""
+      />
+
+      <InfoGamesContainer onClick={() => navigate(`/Game/${props.title}`)}>
+        <Title>
+          <h3>{props.title}</h3>
+        </Title>
 
         <GameCategory>
           <p>{props.category}</p>
         </GameCategory>
       </InfoGamesContainer>
-     
+
       <GamePriceContainer>
-        <button onClick={() => navigate("/")}>
+        <button onClick={handleAddItem}>
           <StyledIcon icon="material-symbols:add-shopping-cart-rounded" />{" "}
         </button>
         R$ {props.price}
       </GamePriceContainer>
     </GameItemContainer>
-   
   );
 }
 
@@ -37,7 +45,7 @@ export default GameListItem;
 
 const GameItemContainer = styled.div`
   height: 80px;
-  width: 113%;
+  width: 100%;
   margin: 0px 8px 4px 8px;
 
   display: flex;
