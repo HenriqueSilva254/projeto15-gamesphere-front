@@ -37,7 +37,7 @@ export default GameListItem;
 
 const GameItemContainer = styled.div`
   height: 80px;
-  width: 100%;
+  width: 113%;
   margin: 0px 8px 4px 8px;
 
   display: flex;

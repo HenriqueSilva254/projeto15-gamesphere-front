@@ -126,6 +126,7 @@ const GameList = styled.div`
   flex-direction: column;
   margin-top: 35px;
   div {
+    width: 100%;
     margin: 8px 15px 10px 0px;
   }
 `;

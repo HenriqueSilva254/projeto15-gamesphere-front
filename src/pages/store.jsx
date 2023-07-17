@@ -14,10 +14,7 @@ function StorePage() {
       <Nav />
       <StorePageContainer>
         <StorePageContent>
-          <GamesHighlight
-            imageGame1={Jogos[0].image}
-            imageGame2={Jogos[1].image}
-          />
+          <GamesHighlight/>
 
           <GameListContainer>
             <GameFilterMenu />
@@ -52,9 +49,8 @@ const StorePageContainer = styled.div`
 `;
 
 const StorePageContent = styled.div`
-
   display: flex;
-  width: 100%;
+  width: 722px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -62,6 +58,7 @@ const StorePageContent = styled.div`
 
 const StorePageBody = styled.section`
   overflow-x: hidden;
+
   height: 100%;
   width: 100%;
   display: flex;
@@ -71,11 +68,12 @@ const StorePageBody = styled.section`
 `;
 
 const GameListContainer = styled.div`
+
   width: 90%;
   height: 600px;
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 8px;
 `;
 
 const GameList = styled.div`
